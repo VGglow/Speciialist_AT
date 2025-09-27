@@ -9,11 +9,11 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 public class BrowserPropertiesTests {
     @Test
     void test_browser_properties() {
-        Configuration.browser = "firefox";
-        Configuration.browserSize = "1500x500";
-        Configuration.browserPosition = "100x200";
-        open("https://ya.ru");
+        Configuration.browser = "edge";
+        Configuration.browserSize = "1280x820";
+        Configuration.browserPosition = "160x240";
+        open("https://ok.ru");
         getWebDriver().manage().window().maximize();
-        sleep(10_000);
+        sleep(3_000);
     }
 }
